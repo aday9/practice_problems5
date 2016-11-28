@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="aday4_practice_problems5.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+// 1
+    // Prompts for numbers.
+    var num1 = Number (prompt("Enter number 1."));
+    var num2 = Number (prompt("Enter number 2."));
+
+    // Puts in numbers for different bitwise functions.
+    document.write("num1 = " + num1 + ", num2 = " + num2);
+    document.write("<br>");
+    document.write("num1 & num2 = " + bitwiseAnd(num1, num2));
+    document.write("<br>");
+
+
+    document.write("<br>");
+    document.write("num1 | num2 = " + bitwiseOr(num1, num2));
+    document.write("<br>");
+
+    document.write("<br>");
+    document.write("num1 ^ num2 = " + bitwiseXor(num1, num2));
+    document.write("<br>");
+
+    document.write("<br>");
+    document.write("num1 << num2 = " + bitwiseLeftShift(num1, num2));
+    document.write("<br>");
+
+    document.write("<br>");
+    document.write("num1 >> num2 = " + bitwiseRightShift(num1, num2));
+    document.write("<br>");
+
+// 2
+    // Prompts for a string and letters to remove.
+    var text = prompt("Enter a string.");
+    var subStr = prompt("What would you like to remove?");
+
+    document.write("<br>");
+    document.write(removeSubStr(text, subStr));
+    document.write("<br>");
+
+// 3
+    // Prompts for number of repetitions
+    var numRepeat = Number(prompt("How many times would you like it to repeat?"));
+
+    document.write("<br>");
+    document.write(awesomeRepeat(numRepeat));
+    document.write("<br>");
+
+// 4
+    // Prompts for a word.
+    var word = (prompt("Enter a word or number."));
+    // Reverses the word.
+    var reverse = isItPal (word)
+
+    document.write("<br>");
+    // If the word is the same, says it's a palindrome.
+    if(word === reverse)
+    {
+      document.write("The word " + word + " in reverse is " + reverse +
+      ". This word is a palindrome.");
+    }
+    // If the word isn't the same, says it's not a palindrome.
+    else
+    {
+      document.write("The word " + word + " in reverse is " + reverse +
+      ". This word is not a palindrome.");
+    }
+    document.write("<br>");
+
+
+// 5
+  // Prompts for numbers.
+  var num1 = Number(prompt("Enter a number."));
+  var num2 = Number(prompt("Enter another number."));
+  var num3 = Number(prompt("Enter another number."));
+
+document.write("<br>");
+  // Does all the calculations to see which works.
+  if(num1 <= num2 && num2 <= num3)
+  {
+    document.write("The sorted numbers are " + num1 + ", " + num2 + ", " + num3)
+  }
+  else if (num1 <= num3 && num3 <= num2)
+  {
+    document.write("The sorted numbers are " + num1 + ", " + num3 + ", " + num2)
+  }
+   else if (num2 <= num1 && num1 <= num3)
+  {
+    document.write("The sorted numbers are " + num2 + ", " + num1 + ", " + num3)
+  }
+   else if (num2 <= num3 && num3 <= num1)
+  {
+    document.write("The sorted numbers are " + num2 + ", " + num3 + ", " + num1)
+  }
+   else if (num3 <= num1 && num1 <= num2)
+  {
+    document.write("The sorted numbers are " + num3 + ", " + num1 + ", " + num2)
+  }
+   else if (num3 <= num2 && num2 <= num1)
+  {
+    document.write("The sorted numbers are " + num3 + ", " + num2 + ", " + num1)
+  }
+  else
+  {
+    document.write("There is nothing to display. Make sure you only enter numbers.")
+  }
+
+// 6
+  document.write("<br>");
+  document.write("<br>");
+  // Asks for a grade and outputs the letter grade.
+  var percent = Number (prompt("What is the grade?"));
+  var grade = grades(percent);
+
+  document.write(grade);
+
+
+    </script>
+  </body>
+</html>
